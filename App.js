@@ -1,20 +1,43 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import react from 'react';
+import { ScrollView, Text, View, Image, StyleSheet } from 'react-native';
+import styles from './styles';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <ScrollView pagingEnabled={true} horizontal={true}>
+      <View style={styles.fullScreenImage}>
+      <Image 
+        source={require('./assets/fonts/ElmoFlash.jpg')}
+        resizeMode="contain"
+        style={styles.image}
+      />
     </View>
+
+    <View style={styles.fullScreenImage}>
+    <Image 
+        source={require('./assets/fonts/MujerFlash.jpg')}
+        resizeMode="contain"
+        style={styles.image}     
+      />
+    </View>
+
+    <View style={styles.fullScreenImage}>
+    <Image 
+        source={require('./assets/fonts/AstroFlash.jpg')}
+        resizeMode="contain"
+        style={styles.image}
+      />
+    </View>
+    
+    <View style={styles.fullScreenImage}>
+    <Image 
+        source={require('./assets/fonts/PolloFlash.jpg')}
+        resizeMode="cover"
+        style={styles.image}   
+      />
+    </View>
+    </ScrollView>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
