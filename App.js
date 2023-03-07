@@ -1,39 +1,41 @@
 import react from 'react';
-import { ScrollView, Text, View, Image, StyleSheet } from 'react-native';
+import { ScrollView, View, ImageBackground } from 'react-native';
 import styles from './styles';
 
 export default function App() {
   return (
-    <ScrollView pagingEnabled={true} horizontal={true}>
+    <ScrollView pagingEnabled={true} horizontal={true} 
+    showsHorizontalScrollIndicator={true} 
+    showsVerticalScrollIndicator={false}   >
       <View style={styles.fullScreenImage}>
-      <Image 
+      <ImageBackground 
         source={require('./assets/fonts/ElmoFlash.jpg')}
-        resizeMode="contain"
-        style={styles.image}
+        resizeMode="cover"
+        style={{width: '100%', height: '100%'}} 
       />
     </View>
 
     <View style={styles.fullScreenImage}>
-    <Image 
+    <ImageBackground 
         source={require('./assets/fonts/MujerFlash.jpg')}
-        resizeMode="contain"
-        style={styles.image}     
+        resizeMode="cover"
+        style={{width: '100%', height: '100%'}} 
       />
     </View>
 
     <View style={styles.fullScreenImage}>
-    <Image 
+    <ImageBackground 
         source={require('./assets/fonts/AstroFlash.jpg')}
-        resizeMode="contain"
-        style={styles.image}
+        resizeMode="cover"
+        style={{width: '100%', height: '100%'}} 
       />
     </View>
     
     <View style={styles.fullScreenImage}>
-    <Image 
+    <ImageBackground 
         source={require('./assets/fonts/PolloFlash.jpg')}
         resizeMode="cover"
-        style={styles.image}   
+        style={{width: '100%', height: '100%'}}   
       />
     </View>
     </ScrollView>

@@ -11,7 +11,6 @@ const styles = StyleSheet.create({
     height: componentHeight,
   },
   image: {
-    aspectRatio: 1,
     maxWidth: '100%',
     maxHeight: '100%',
   }
