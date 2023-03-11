@@ -1,7 +1,5 @@
-import react from "react";
 import { ScrollView, View, ImageBackground, Dimensions } from "react-native";
 import styles from "./styles";
-import VerticalConstraint from "./VerticalConstraint";
 const { width, height } = Dimensions.get("window");
 
 
@@ -17,7 +15,7 @@ export default function App() {
     >
       <View style={styles.fullScreenImage}>
         <ImageBackground
-          source={require("./assets/fonts/ElmoFlash.jpg")}
+          source={require("./assets/images/ElmoFlash.jpg")}
           resizeMode="cover"
           style={{ width: "100%", height: "100%" }}
         />
@@ -33,7 +31,7 @@ export default function App() {
         >
           <View style={styles.fullScreenImage}>
             <ImageBackground
-              source={require("./assets/fonts/MontañaFlash.jpg")}
+              source={require("./assets/images/MontañaFlash.jpg")}
               resizeMode="cover"
               style={{ width: "100%", height: "100%" }}
             />
@@ -41,7 +39,7 @@ export default function App() {
 
           <View style={styles.fullScreenImage}>
             <ImageBackground
-              source={require("./assets/fonts/MujerFlash.jpg")}
+              source={require("./assets/images/AstroFlash.jpg")}
               resizeMode="cover"
               style={{ width: "100%", height: "100%" }}
             />
@@ -49,7 +47,7 @@ export default function App() {
 
           <View style={styles.fullScreenImage}>
             <ImageBackground
-              source={require("./assets/fonts/AstroFlash.jpg")}
+              source={require("./assets/images/MujerFlash.jpg")}
               resizeMode="cover"
               style={{ width: "100%", height: "100%" }}
             />
@@ -58,7 +56,7 @@ export default function App() {
       </View>
       <View style={styles.fullScreenImage}>
         <ImageBackground
-          source={require("./assets/fonts/PolloFlash.jpg")}
+          source={require("./assets/images/PolloFlash.jpg")}
           resizeMode="cover"
           style={{ width: "100%", height: "100%" }}
         />
