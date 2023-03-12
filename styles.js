@@ -6,7 +6,7 @@ const componentWidth = width * 1; // El ancho de la componente será el 80% del 
 const componentHeight = height * 1; // El alto de la componente será el 60% del alto de la pantalla
 
 const styles = StyleSheet.create({
-  fullScreenImage: {
+  fullScreen: {
     width: componentWidth,
     height: componentHeight,
   },
