@@ -5,10 +5,9 @@ import styles from "./styles";
 
 const data = [{ id: "1" }, { id: "2" }, { id: "3" }];
 
-
 const ThreeViewsFlatList = () => {
   const renderItem = ({ item }) => (
-    <View style={{flexDirection: 'row'}}>
+    <View style={{ flexDirection: "row" }}>
       <View style={styles.fullScreen}>
         <ImageBackground
           source={require("./assets/images/MontañaFlash.jpg")}
@@ -43,6 +42,12 @@ const ThreeViewsFlatList = () => {
       pagingEnabled={true}
       horizontal={true}
       showsHorizontalScrollIndicator={false}
+      initialScrollIndex={1}
+      getItemLayout={(data, index) => ({
+        length: Dimensions.get("window").width,
+        offset: Dimensions.get("window").width * index,
+        index,
+      })}
     />
   );
 };
